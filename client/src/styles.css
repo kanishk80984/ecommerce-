@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+* { box-sizing: border-box; }
+body { margin: 0; color: #22252d; font-family: 'DM Sans', Arial, sans-serif; }
+.page { min-height: 100vh; display: grid; grid-template-columns: minmax(280px, 44%) 1fr; }
+.brand-panel { background: #203c39; color: #f7f5ed; padding: clamp(2rem, 7vw, 7rem); display: flex; flex-direction: column; justify-content: space-between; gap: 6rem; }
+.logo { width: 42px; height: 42px; border: 1px solid #d8d4bd; display: grid; place-items: center; border-radius: 50%; font-family: Georgia, serif; font-size: 1.4rem; }
+.eyebrow { color: #a9b8a1; margin: 0 0 1rem; letter-spacing: .14em; font-size: .72rem; font-weight: 700; }
+h1 { max-width: 430px; margin: 0; font: 700 clamp(2.5rem, 5vw, 4.5rem)/1.08 'Playfair Display', Georgia, serif; }
+.intro { max-width: 390px; color: #c7d1c2; margin: 1.5rem 0 0; font-size: 1.05rem; line-height: 1.65; }
+.login-panel { display: grid; place-items: center; background: #fbfaf7; padding: 2rem; }
+.login-card { width: min(100%, 400px); }
+.login-card .eyebrow { color: #638074; }
+h2 { font-size: 2rem; letter-spacing: -.04em; margin: 0; }
+.subtext { margin: .75rem 0 2.25rem; color: #676d72; }
+label { display: block; margin: 1.2rem 0 .5rem; font-size: .9rem; font-weight: 600; }
+input { width: 100%; border: 1px solid #d8d9d3; border-radius: 6px; padding: .9rem 1rem; font: inherit; outline-color: #41695d; }
+button { width: 100%; margin-top: 2rem; border: 0; border-radius: 6px; padding: 1rem; background: #203c39; color: white; cursor: pointer; font: 600 1rem inherit; }
+button:hover:not(:disabled) { background: #315952; } button:disabled { opacity: .7; cursor: wait; }
+.message { padding: .8rem; border-radius: 5px; font-size: .9rem; line-height: 1.4; }.error { background: #ffebe9; color: #a22e25; }.success { background: #e6f3e9; color: #236238; }
+.footer-text { text-align: center; color: #69716d; font-size: .9rem; margin-top: 1.75rem; }.footer-text a { color: #315e51; font-weight: 700; }
+@media (max-width: 720px) { .page { grid-template-columns: 1fr; }.brand-panel { min-height: 290px; padding: 2rem; gap: 3rem; }.login-panel { padding: 3rem 1.5rem; } }

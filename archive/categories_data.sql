@@ -1,0 +1,37 @@
+-- MySQL dump 10.13  Distrib 8.0.46, for Win64 (x86_64)
+--
+-- Host: localhost    Database: ecommerce_platform
+-- ------------------------------------------------------
+-- Server version	8.0.46
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Dumping data for table `categories`
+--
+
+LOCK TABLES `categories` WRITE;
+/*!40000 ALTER TABLE `categories` DISABLE KEYS */;
+INSERT INTO `categories` (`id`, `name`, `slug`, `parent_id`, `image`, `status`, `created_at`, `gst_rate`, `margin_percentage`, `margin_description`, `gst_percentage`, `youtube_video_link`) VALUES (1,'General','general',NULL,NULL,'ACTIVE','2026-07-15 06:31:41',18.00,0.00,NULL,0.00,NULL),(2,'Fashion','fashion',NULL,NULL,'ACTIVE','2026-07-15 12:12:38',18.00,0.00,NULL,0.00,NULL),(3,'Mobile/Tablet','mobile-tablet',NULL,NULL,'ACTIVE','2026-07-15 12:12:38',18.00,10.00,'IBC service charge',0.00,NULL),(4,'Electronics','electronics',NULL,NULL,'ACTIVE','2026-07-15 12:12:38',28.00,0.00,NULL,0.00,NULL),(5,'Beauty','beauty',NULL,NULL,'ACTIVE','2026-07-15 12:12:38',5.00,0.00,NULL,0.00,NULL),(6,'Home','home',NULL,NULL,'ACTIVE','2026-07-15 12:12:38',18.00,0.00,NULL,0.00,NULL),(7,'Appliances','appliances',NULL,NULL,'ACTIVE','2026-07-15 12:12:38',12.00,0.00,NULL,0.00,NULL),(8,'Toys & Baby','toys-baby',NULL,NULL,'ACTIVE','2026-07-15 12:12:38',18.00,0.00,NULL,0.00,NULL),(9,'Food & Health','food-health',NULL,NULL,'ACTIVE','2026-07-15 12:12:38',18.00,0.00,NULL,0.00,NULL),(10,'Auto Accessories','auto-accessories',NULL,NULL,'ACTIVE','2026-07-15 12:12:38',18.00,0.00,NULL,0.00,NULL),(11,'Sports & Fitness','sports-fitness',NULL,NULL,'ACTIVE','2026-07-15 12:12:38',18.00,0.00,NULL,0.00,NULL),(12,'Furniture','furniture',NULL,NULL,'ACTIVE','2026-07-15 12:12:38',18.00,0.00,NULL,0.00,NULL),(17,'Home Appliances','home-appliances',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(18,'Kitchen','kitchen',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(20,'Books','books',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(21,'Sports','sports',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(22,'Automotive','automotive',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(23,'Baby Products','baby-products',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(24,'Pet Supplies','pet-supplies',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(25,'Jewellery','jewellery',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(26,'Watches','watches',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(27,'Shoes','shoes',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(28,'Bags','bags',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(29,'Accessories','accessories',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,5.00,NULL,0.00,'https://www.youtube.com/watch?v=30b6dd6hNGs'),(30,'Gaming','gaming',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(31,'Computers','computers',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(32,'Office Supplies','office-supplies',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(33,'Health','health',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(34,'Grocery','grocery',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(35,'Snacks','snacks',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(36,'Beverages','beverages',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(37,'Stationery','stationery',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(38,'Musical Instruments','musical-instruments',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(39,'Art Supplies','art-supplies',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(40,'Garden','garden',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(41,'Tools','tools',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(42,'Construction','construction',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(43,'Safety Equipment','safety-equipment',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(44,'Travel & Luggage','travel-luggage',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(45,'Gift Items','gift-items',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(46,'Festival Products','festival-products',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(47,'Religious Products','religious-products',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(48,'Craft Supplies','craft-supplies',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(49,'Fitness','fitness',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(50,'Yoga','yoga',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(51,'Cycling','cycling',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(52,'Outdoor','outdoor',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(53,'Camping','camping',NULL,NULL,'ACTIVE','2026-07-18 06:37:32',18.00,0.00,NULL,0.00,NULL),(54,'Fishing','fishing',NULL,NULL,'ACTIVE','2026-07-18 06:37:33',18.00,0.00,NULL,0.00,NULL),(55,'Laptops','laptops',NULL,NULL,'ACTIVE','2026-07-20 07:11:35',18.00,0.00,NULL,0.00,NULL);
+/*!40000 ALTER TABLE `categories` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2026-07-23 11:28:52

@@ -1,0 +1,37 @@
+{
+  "name": "login-client",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3013",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "vite build --outDir dist/client",
+    "build:server": "set VITE_SSR_BUILD=true && vite build --ssr src/entry-server.jsx --outDir dist/server",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.12.0",
+    "@tailwindcss/vite": "^4.3.2",
+    "autoprefixer": "^10.5.2",
+    "axios": "^1.18.1",
+    "framer-motion": "^12.42.2",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^1.24.0",
+    "postcss": "^8.5.19",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.81.0",
+    "react-hot-toast": "^2.6.0",
+    "react-redux": "^9.3.0",
+    "react-router-dom": "^7.18.1",
+    "recharts": "^3.9.2",
+    "redux-persist": "^6.0.0",
+    "socket.io-client": "^4.8.3",
+    "tailwindcss": "^4.3.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.8"
+  }
+}

@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /superadmin/
+Disallow: /vendor/
+Disallow: /account/
+Disallow: /login
+Disallow: /register
+Disallow: /cart
+Disallow: /checkout
+Disallow: /support-portal/
+
+Sitemap: https://www.ibcmart.com/sitemap.xml
