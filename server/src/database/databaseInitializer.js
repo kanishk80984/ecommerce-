@@ -7,7 +7,7 @@ import { getPool, getDBName } from './connection.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const MASTER_DB = 'user4';
+const MASTER_DB = 'railway';
 
 async function getSchemaDifferences(conn, expectedDb, actualDb) {
     const diffs = [];
